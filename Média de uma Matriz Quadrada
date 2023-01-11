@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main (){
+
+int n, nn;
+scanf ("%d", &n);
+int mat[n][n];
+double media;
+media = 0;
+nn = n*n;
+
+for (int h = 1; h <= n; h++) {
+
+    for (int g = 1; g <= n; g++){
+        scanf("%d", &mat[h][g]);
+        media = media + mat[h][g];
+    }
+}
+
+double mf = media / nn;
+
+printf("%.2lf\n", mf);
+
+    return 0;
+}
