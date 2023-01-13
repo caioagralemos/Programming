@@ -1,3 +1,5 @@
+from colorama import Fore
+
 def myfunc(string):
     string = list(string)
     tam = len(string)
@@ -11,4 +13,4 @@ def myfunc(string):
     string = ''.join(string)
     return string
 
-print(myfunc("Paralelepipedo"))
+print(Fore.RED + myfunc("Paralelepipedo"))

@@ -1,0 +1,10 @@
+'''
+A VERY SIMPLE SCRIPT
+'''
+
+A = 1
+B = 2
+print(A)
+print(B)
+
+# pylint pylint.py
