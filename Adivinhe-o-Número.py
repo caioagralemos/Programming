@@ -34,11 +34,11 @@ def cpu_guess(x):
 print("\n####################\n\nADIVINHE O NÚMERO\nby Caio Agra Lemos\n\n####################\n\n")
 opcao = input("Pressione:\n- 1 para adivinhar o número do CPU\n- 2 para o CPU advinhar seu número\n\n")
 
-# adivinhar o número da CPU
+# adivinhar o núme
 if (opcao == "1"):
     guess(100)
 # CPU advinhar seu número
-elif(opcao == "2"):
+elif(opcao == "2"):ro da CPU
     cpu_guess(100)
 else:
     print("\nOpção inválida!\n")
