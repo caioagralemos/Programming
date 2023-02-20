@@ -1,0 +1,5 @@
+archivename = input("nome do seu arquivo: ")
+f = open(f"{archivename}.txt", "r")
+text = f.read()
+text = text.split(" ")
+print(len(text))
