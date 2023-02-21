@@ -38,7 +38,7 @@ opcao = input("Pressione:\n- 1 para adivinhar o número do CPU\n- 2 para o CPU a
 if (opcao == "1"):
     guess(100)
 # CPU advinhar seu número
-elif(opcao == "2"):ro da CPU
+elif(opcao == "2"):
     cpu_guess(100)
 else:
     print("\nOpção inválida!\n")
