@@ -1,4 +1,4 @@
-def decode():
+def encode():
     alfabeto = {
         'a': 1,
         'á': 1,
@@ -39,21 +39,25 @@ def decode():
 
     arrayalfa = ['zero','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','x','w','y','z']
 
+
     txtfilename = input("input the name of your file: ")
-    cypher = int(input("input your decoding cypher: "))
+    cypher = int(input("input your coding cypher: "))
     f = open(txtfilename, 'r')
     txt = f.read().lower()
     txt = list(txt)
+
 
     for i in range(0,len(txt)):
         if txt[i] == " " or txt[i] == "." or txt[i] == "," or txt[i] == "\n":
             pass
         else:
-            novo = alfabeto[str(txt[i])] - cypher
+            novo = alfabeto[str(txt[i])] + cypher
+            if novo > 26:
+                novo = novo - 26
             txt[i] = novo
             txt[i] = arrayalfa[txt[i]]
 
     txt = ''.join(txt)
 
-    f = open("decoded.txt", "w")
+    f = open("encoded.txt", "w")
     f.write(txt)

@@ -1,8 +1,13 @@
-i
+from decode import decode
+from encode import encode
 
-doe = 0
+while True:
+    doe = int(input("press 1 to encode or 2 to decode: "))
 
-while doe != "1" or doe != "2":
-    doe = input("press 1 to decode or 2 to decode: ")
+    if doe == 1 or doe == 2:
+        break
 
-if doe == "1":
+if doe == 1:
+    encode()
+elif doe == 2:
+    decode()
