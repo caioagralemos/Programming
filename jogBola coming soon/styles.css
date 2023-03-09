@@ -1,0 +1,48 @@
+body {
+    background-color: #198754;
+}
+
+p{
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    margin-top: 10px;
+}
+
+#imagem{
+    margin: auto;
+    display: block;
+    margin-top: 50px;
+    height: 30rem;
+    width: auto;
+}
+
+a{
+    color:#198754;
+    text-decoration: none;
+    transition: .5s;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+@media (min-width: 350px) and (max-width: 565px) {
+    #imagem{
+        margin: auto;
+        display: block;
+        margin-top: 160px;
+        height: 20rem;
+        width: auto;
+    }
+    p{
+        font-family: 'PT Sans', sans-serif;
+        text-align: center;
+        font-size: 2.5rem;
+        color: white;
+        margin-top: -10px;
+    }
+    
+}
